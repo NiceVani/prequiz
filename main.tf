@@ -32,7 +32,7 @@ resource "docker_container" "my_container" {
   name = "my-express-app"
   image = docker_image.my_app.name
   ports {
-    internal = 3002
+    internal = 3000
     external = 80
   }
 }
